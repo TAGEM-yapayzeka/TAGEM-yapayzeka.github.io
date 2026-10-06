@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAGEM AI for Agriculture Research Group</title>
+<meta name="description" content="TAGEM AI for Agriculture Research Group — applying data science and artificial intelligence to agricultural research at the General Directorate of Agricultural Research and Policies (TAGEM), Republic of Türkiye Ministry of Agriculture and Forestry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f7f2;
+    --surface: #ffffff;
+    --text: #1d2a22;
+    --muted: #5b6b60;
+    --line: #dfe5dc;
+    --accent: #2f6b3a;
+    --accent-soft: #e6f0e3;
+    --chip: #eef3ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121814;
+      --surface: #19211c;
+      --text: #e7ede6;
+      --muted: #a3b2a6;
+      --line: #2a352d;
+      --accent: #8cc79a;
+      --accent-soft: #1f2e23;
+      --chip: #223026;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; }
+  .brand { font-weight: 600; font-size: 15px; letter-spacing: .01em; }
+  .lang { display: flex; gap: 4px; }
+  .lang button {
+    font: inherit; font-size: 13px; font-weight: 600;
+    padding: 4px 10px; border-radius: 6px;
+    border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+
+  .hero { padding: 56px 0 40px; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 12px; }
+  h1 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 0 0 16px; font-weight: 700;
+  }
+  .lead { font-size: 18px; color: var(--muted); max-width: 700px; margin: 0; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .facts span { background: var(--chip); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--text); }
+
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: "Source Serif 4", Georgia, serif; font-size: 26px; margin: 0 0 20px; }
+  h3 { font-size: 17px; margin: 0 0 6px; }
+  p { margin: 0 0 12px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .card p { color: var(--muted); font-size: 15px; margin: 0; }
+  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--accent); background: var(--accent-soft); border-radius: 4px; padding: 2px 8px; margin-bottom: 10px; }
+
+
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  ul.plain li:last-child { border-bottom: 0; }
+  ul.plain .meta { color: var(--muted); font-size: 14px; }
+
+  footer { padding: 32px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer p { margin: 0 0 6px; overflow-wrap: anywhere; }
+
+  [data-l="tr"] { display: none; }
+  html[lang="tr"] [data-l="en"] { display: none; }
+  html[lang="tr"] [data-l="tr"] { display: revert; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">TAGEM · <span data-l="en">AI for Agriculture</span><span data-l="tr">Tarımda Yapay Zekâ</span></div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="tr" aria-pressed="false">TR</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <p class="eyebrow">
+      <span data-l="en">Research group</span><span data-l="tr">Araştırma grubu</span>
+    </p>
+    <h1>
+      <span data-l="en">TAGEM AI for Agriculture Research Group</span>
+      <span data-l="tr">TAGEM Tarımda Yapay Zekâ Araştırma Grubu</span>
+    </h1>
+    <p class="lead">
+      <span data-l="en">We apply data science and artificial intelligence to agricultural research questions — from crop and animal genetics to environmental forecasting and agricultural policy — within the national agricultural research network of the Republic of Türkiye.</span>
+      <span data-l="tr">Bitki ve hayvan genetiğinden çevresel tahmine ve tarım politikasına kadar tarımsal araştırma sorularına, Türkiye'nin ulusal tarımsal araştırma ağı içinde veri bilimi ve yapay zekâ yöntemleriyle yanıt arıyoruz.</span>
+    </p>
+    <div class="facts">
+      <span data-l="en">General Directorate of Agricultural Research and Policies (TAGEM)</span>
+      <span data-l="tr">Tarımsal Araştırmalar ve Politikalar Genel Müdürlüğü (TAGEM)</span>
+      <span data-l="en">Ministry of Agriculture and Forestry</span>
+      <span data-l="tr">T.C. Tarım ve Orman Bakanlığı</span>
+      <span data-l="en">Public, non-profit agricultural R&amp;D organization</span>
+      <span data-l="tr">Kamu, kâr amacı gütmeyen tarımsal Ar-Ge kuruluşu</span>
+      <span>Ankara, Türkiye</span>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2><span data-l="en">Research areas</span><span data-l="tr">Araştırma alanları</span></h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag"><span data-l="en">Agricultural sciences</span><span data-l="tr">Tarım bilimleri</span></span>
+        <h3><span data-l="en">Crop breeding &amp; genomics</span><span data-l="tr">Bitki ıslahı ve genomik</span></h3>
+        <p>
+          <span data-l="en">Integrating breeding-trial and genotype data for wheat and barley (e.g. via BrAPI / Triticeae Toolbox) for exploratory analysis, genomic prediction and machine-learning models of agronomic traits.</span>
+          <span data-l="tr">Buğday ve arpada ıslah denemesi ve genotip verilerini (ör. BrAPI / Triticeae Toolbox) bir araya getirerek keşifsel analiz, genomik seleksiyon ve tarımsal özellikler için makine öğrenmesi modelleri.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag"><span data-l="en">Animal science &amp; genetics</span><span data-l="tr">Hayvan bilimi ve genetik</span></span>
+        <h3><span data-l="en">Poultry genetics &amp; marker development</span><span data-l="tr">Kanatlı genetiği ve marker geliştirme</span></h3>
+        <p>
+          <span data-l="en">Genome-wide association studies, trait-associated SNP mining and KASP assay design for marker-assisted selection in chicken; data-driven monitoring of incubation and hatchery processes.</span>
+          <span data-l="tr">Tavukta genom boyu ilişkilendirme çalışmaları (GWAS), özellikle ilişkili SNP taraması ve marker destekli seleksiyon için KASP tasarımı; kuluçka ve çıkım süreçlerinin veriye dayalı izlenmesi.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag"><span data-l="en">Agricultural economics</span><span data-l="tr">Tarım ekonomisi</span></span>
+        <h3><span data-l="en">Agricultural shocks &amp; policy</span><span data-l="tr">Tarımsal şoklar ve politika</span></h3>
+        <p>
+          <span data-l="en">Measuring agricultural shocks and economic-policy uncertainty from large news corpora (GDELT) and analysing their effects on agricultural markets and policy.</span>
+          <span data-l="tr">Büyük haber veri setlerinden (GDELT) tarımsal şokları ve ekonomi politikası belirsizliğini ölçmek; bunların tarım piyasaları ve politikaları üzerindeki etkilerini analiz etmek.</span>
+        </p>
+      </div>
+      <div class="card">
+        <span class="tag"><span data-l="en">Environmental &amp; marine science</span><span data-l="tr">Çevre ve deniz bilimleri</span></span>
+        <h3><span data-l="en">Physics-informed forecasting</span><span data-l="tr">Fizik bilgili tahmin modelleri</span></h3>
+        <p>
+          <span data-l="en">Hybrid models that combine numerical transport schemes with graph neural networks to forecast chlorophyll and biogeochemistry in the Black Sea and the Mediterranean.</span>
+          <span data-l="tr">Karadeniz ve Akdeniz'de klorofil ve biyojeokimyasal süreçleri tahmin etmek için sayısal taşınım şemalarını çizge sinir ağlarıyla birleştiren hibrit modeller.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><span data-l="en">Selected projects</span><span data-l="tr">Seçili projeler</span></h2>
+    <ul class="plain">
+      <li>
+        <strong>BlackSea-FluxGNN</strong>
+        <div class="meta">
+          <span data-l="en">Physics-informed graph neural network for Black Sea chlorophyll forecasting (open source).</span>
+          <span data-l="tr">Karadeniz klorofil tahmini için fizik bilgili çizge sinir ağı (açık kaynak).</span>
+        </div>
+      </li>
+      <li>
+        <strong><span data-l="en">Wheat breeding data analysis</span><span data-l="tr">Buğday ıslah verisi analizi</span></strong>
+        <div class="meta">
+          <span data-l="en">BrAPI data retrieval, exploratory analysis and ML / genomic modelling on Triticeae Toolbox wheat data.</span>
+          <span data-l="tr">Triticeae Toolbox buğday verisi üzerinde BrAPI ile veri çekme, keşifsel analiz ve ML / genomik modelleme.</span>
+        </div>
+      </li>
+      <li>
+        <strong><a href="https://tagem-yapayzeka.github.io/tarimdogakasifi/"><span data-l="en">Agriculture &amp; Nature Explorer</span><span data-l="tr">Tarım &amp; Doğa Kâşifi</span></a></strong>
+        <div class="meta">
+          <span data-l="en">Science-outreach application for the TAGEM stand at TEKNOFEST 2026.</span>
+          <span data-l="tr">TEKNOFEST 2026 TAGEM standı için bilim iletişimi uygulaması.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="people">
+    <h2><span data-l="en">People</span><span data-l="tr">Ekip</span></h2>
+    <p>
+      <span data-l="en">In line with Türkiye's Personal Data Protection Law (KVKK), team members are listed by role only.</span>
+      <span data-l="tr">6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında ekip üyeleri yalnızca rolleriyle belirtilmiştir.</span>
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3><span data-l="en">Principal Investigator</span><span data-l="tr">Grup Yürütücüsü</span></h3>
+        <p><span data-l="en">Data science and AI methods; group coordination.</span><span data-l="tr">Veri bilimi ve yapay zekâ yöntemleri; grup koordinasyonu.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-l="en">Wheat Breeder</span><span data-l="tr">Buğday Islahçısı</span></h3>
+        <p><span data-l="en">Wheat breeding trials and genotype data.</span><span data-l="tr">Buğday ıslah denemeleri ve genotip verisi.</span></p>
+      </div>
+      <div class="card">
+        <h3><span data-l="en">Barley Breeder</span><span data-l="tr">Arpa Islahçısı</span></h3>
+        <p><span data-l="en">Barley breeding trials and genotype data.</span><span data-l="tr">Arpa ıslah denemeleri ve genotip verisi.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="infrastructure">
+    <h2><span data-l="en">Computing</span><span data-l="tr">Hesaplama altyapısı</span></h2>
+    <p>
+      <span data-l="en">Large-scale analyses (GWAS, model training) run on TRUBA, Türkiye's national high-performance computing infrastructure operated by TÜBİTAK ULAKBİM.</span>
+      <span data-l="tr">Büyük ölçekli analizler (GWAS, model eğitimi) TÜBİTAK ULAKBİM'in işlettiği ulusal yüksek başarımlı hesaplama altyapısı TRUBA üzerinde yürütülmektedir.</span>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      <a href="https://github.com/TAGEM-yapayzeka">github.com/TAGEM-yapayzeka</a>
+    </p>
+    <p>
+      <span data-l="en">This is the research group's own page. The institution's official website is</span>
+      <span data-l="tr">Bu sayfa araştırma grubunun kendi sayfasıdır. Kurumun resmi web sitesi:</span>
+      <a href="https://www.tarimorman.gov.tr/TAGEM">tarimorman.gov.tr/TAGEM</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var buttons = document.querySelectorAll('.lang button');
+    function set(lang) {
+      root.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.set); }); });
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    if (saved === 'tr' || saved === 'en') set(saved);
+  })();
+</script>
+</body>
+</html>
